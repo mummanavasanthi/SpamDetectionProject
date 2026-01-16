@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f0f2f5;   /* same feel as login page */
+}
+
+/* center everything */
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card */
+.card {
+  width: 420px;
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* heading */
+h1 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+/* labels */
+label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 6px;
+}
+
+/* inputs */
+select, input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccd0d5;
+  font-size: 14px;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+/* button */
+.btn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #166fe5;
+}
+
+/* result */
+.result {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+}
+
+.loading {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}

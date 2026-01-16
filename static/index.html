@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spam Detection</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <div class="center">
+    <div class="card">
+
+      <h1>Spam Detection</h1>
+
+      <label>Message Type</label>
+      <select id="inputType" onchange="toggleInputs()">
+        <option value="sms">SMS</option>
+        <option value="email">Email</option>
+      </select>
+
+      <!-- SMS -->
+      <div id="smsBox">
+        <label>SMS Message</label>
+        <textarea id="smsMessage" placeholder="Enter SMS text..."></textarea>
+      </div>
+
+      <!-- Email -->
+      <div id="emailBox" class="hidden">
+        <label>Email Subject</label>
+        <input id="emailSubject" type="text" placeholder="Enter subject" />
+
+        <label>Email Body</label>
+        <textarea id="emailBody" placeholder="Enter email content..."></textarea>
+      </div>
+
+      <button class="btn" onclick="predictSpam()">Check Spam</button>
+
+      <div id="loading" class="loading hidden">Checking...</div>
+
+      <div id="resultBox" class="result hidden">
+        <h2 id="resultTitle"></h2>
+        <p id="resultType"></p>
+        <p><b>Spam Probability:</b> <span id="spamProb"></span></p>
+        <p><b>Model Accuracy:</b> <span id="modelAcc"></span></p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
